@@ -1,6 +1,7 @@
 # Install libraries
 pip install requirement.txt
 
-# streamlit run app.py
+# Run app
+streamlit run app.py
 
-# run_indexer.py to make the vector database. I am using springerLink & arxiv.
+run_indexer.py to make the vector database. I am using springerLink.
