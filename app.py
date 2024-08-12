@@ -10,7 +10,7 @@ load_dotenv()
 client = chromadb.PersistentClient(path="db/")
 
 # ChromaDB collection name (should match the one used during indexing)
-chroma_collection_name = 'test'
+chroma_collection_name = 'database'
 
 # Initialize search engine
 search_engine = SearchEngine(chroma_client=client, chroma_collection_name=chroma_collection_name)

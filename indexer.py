@@ -69,11 +69,11 @@ class Indexer:
             print(link)
             try:
                 content = self.get_html_body_content(link)
-                self.add_html_to_vectordb(content, link)
+                self.add_to_vectordb(content, link)
             except:
                 print("unable to process: " + link)
   
-    def add_html_to_vectordb(self, content, path):
+    def add_to_vectordb(self, content, path):
         embedding = create_embedding(content)
 
         self.insert_embedding(embedding, content, path)
